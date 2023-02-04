@@ -286,6 +286,86 @@ h1, h2, h3, p, ul {
 
 }
 
+.modal-form {
+    outline: 1px solid red;
+    margin: auto;
+    padding: 0;
+    width: 360px;
+}
+
+.modal-text {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+     color: var(--text);
+}
+
+.modal-form-field {
+    display: flex;
+    margin-bottom: 8px;
+    flex-direction: column;
+    text-align: start;
+}
+
+.modal-form-field label {
+    margin-bottom: 4px;
+    
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--text);
+}
+
+.modal-form-field input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.textarea {
+    padding-top: 8px;
+    padding-left: 16px;
+
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    resize: none;
+}
+
+.accept {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    margin-left: 8px;
+}
+
+.send-btn {
+    width:169px;
+    height: 56px;
+    background-color: var(--primary-brand);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+}
+
+.modal-form-field.checkbox {
+    flex-direction: row;
+}
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -301,6 +381,7 @@ h1, h2, h3, p, ul {
     margin-left: auto;
     margin-top: 24px;
     margin-right: 24px;
+    margin-bottom: 24px;
 
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -651,7 +732,8 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.submit-btn {   
+.submit-btn {  
+    position: relative;
     
     width: 165px;
     height: 40px;
@@ -671,8 +753,12 @@ img {
     border: transparent;
 }
 
-
-
+.submit-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
 
 /*Портфоліо*/
 
