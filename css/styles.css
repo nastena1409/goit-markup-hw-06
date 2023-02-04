@@ -755,8 +755,11 @@ img {
 
 .submit-icon {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
+    width: 24px;
+    height: 24px;
+    fill:var(--white);
     
 }
 
