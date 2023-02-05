@@ -288,7 +288,6 @@ h1, h2, h3, p, ul {
 }
 
 .modal-form {
-    outline: 1px solid red;
     margin: auto;
     padding: 0;
     width: 360px;
@@ -402,16 +401,22 @@ h1, h2, h3, p, ul {
     border: 1.25px solid var(--dark);
     border-radius: 2px;
     fill: var(--white);
-    background-color: #31D0AA;
+
     margin-right: 8px;
 }
 
 
 .accept {
+    
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--text);
+}
+
+.policy {
+    text-decoration: underline;
+    color: var(--primary-brand);
 }
 
 .checkbox:checked ~ .icon-check {
