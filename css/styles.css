@@ -8,6 +8,7 @@
 --accent: #E7E9FC;
 --pressed-state: #404BBF;
 --success:#31D0AA;
+--subtle-text: #8E8F99;
 }
 
 html {
@@ -318,7 +319,7 @@ h1, h2, h3, p, ul {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
-    color: var(--text);
+    color: var(--subtle-text);
 }
 
 .form-name {
@@ -338,10 +339,9 @@ h1, h2, h3, p, ul {
     fill: var(--dark);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* outline: 1px solid red; */
 }
 
-.modal-form-field input {
+.checkbox-input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -370,13 +370,55 @@ h1, h2, h3, p, ul {
     resize: none;
 }
 
+.checkbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.checkbox-input {
+    /* appearance: none; 
+    position: absolute; */
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}   
+
+.icon-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid var(--dark);
+    border-radius: 2px;
+    fill: var(--white);
+    background-color: #31D0AA;
+    margin-right: 8px;
+}
+
+
 .accept {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--text);
-    margin-left: 8px;
 }
+
+.checkbox:checked ~ .icon-check {
+    background-color: var(--pressed-state);
+} 
+
+
 
 .send-btn {
     width:169px;
@@ -390,11 +432,10 @@ h1, h2, h3, p, ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
+    margin-bottom: 24px;
 }
 
-.modal-form-field.checkbox {
-    flex-direction: row;
-}
+
 
 .backdrop.is-hidden {
     opacity: 0;
