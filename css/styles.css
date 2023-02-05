@@ -370,16 +370,13 @@ h1, h2, h3, p, ul {
 }
 
 .checkbox {
-    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 24px;
 }
 
 .checkbox-input {
-    /* appearance: none; 
-    position: absolute; */
-
+    
     position: absolute;
     width: 1px;
     height: 1px;
@@ -390,12 +387,10 @@ h1, h2, h3, p, ul {
     overflow: hidden;
 }   
 
-.icon-check {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    align-self: center;
+.checkbox-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--dark);
@@ -406,7 +401,7 @@ h1, h2, h3, p, ul {
 }
 
 
-.accept {
+.checkbox-label {
     
     font-size: 12px;
     line-height: 1.33;
@@ -419,11 +414,9 @@ h1, h2, h3, p, ul {
     color: var(--primary-brand);
 }
 
-.checkbox:checked ~ .icon-check {
-    background-color: var(--pressed-state);
+.checkbox-input:checked ~ .checkbox-icon {
+    background-color: var(--pressed-state);   
 } 
-
-
 
 .send-btn {
     width:169px;
