@@ -402,7 +402,7 @@ h1, h2, h3, p, ul {
 
 
 .checkbox-label {
-    
+    display: flex;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
