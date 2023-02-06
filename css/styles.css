@@ -726,25 +726,23 @@ img {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo:hover,
+.client-logo:hover,  
 .client-logo:focus {
     border: 1px solid var(--pressed-state);
-    
 }
 
-.icon {
-    
+.icon {  
     align-self: center; 
     fill: #8E8F99; 
-
+    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
     
 
-.icon.current:hover,
-.icon.current:focus {
-    fill: var(--pressed-state);
-}
+.client-logo:hover .icon.current,
+.client-logo:focus .icon.current { 
+    fill: var(--pressed-state); 
+}  
 
 /*Footer*/
 
